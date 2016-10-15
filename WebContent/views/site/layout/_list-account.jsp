@@ -34,7 +34,7 @@
 					<div class="info">
 						<a href="">Khoi</a><br>
 						<p>editor</p>
-						<input type="checkbox" value="">check
+						<a class="ask-window btn btn-default" href="#ask-box">Chuyển</a>
 					</div>
 				</div>
 			</div>
@@ -48,7 +48,7 @@
 					<div class="info">
 						<a href="">Khoi</a><br>
 						<p>editor</p>
-						<input type="checkbox" value="">check
+						<a class="ask-window btn btn-default" href="#ask-box">Chuyển</a>
 					</div>
 				</div>
 			</div>
@@ -62,7 +62,7 @@
 					<div class="info">
 						<a href="">Khoi</a><br>
 						<p>editor</p>
-						<input type="checkbox" value="">check
+						<a class="ask-window btn btn-default" href="#ask-box">Chuyển</a>
 					</div>
 				</div>
 			</div>
@@ -76,15 +76,33 @@
 					<div class="info">
 						<a href="">Khoi</a><br>
 						<p>editor</p>
-						<input type="checkbox" value="">check
+						<a class="ask-window btn btn-default" href="#ask-box">Chuyển</a>
 					</div>
 				</div>
 			</div>
 		</div>
 		<!-- end row -->
 	</div>
+	
+	<div class="row">
+			<div class="ask" id="ask-box">
+				<a class="close" href="#"><img class="img-close" alt="Close" src="images/close.png" style=""/></a>
+					<p style="text-align: center; color: blue; font-weight: bolder;">
+						Xác nhận
+					</p>
+
+					<p style="text-align: center; color: blue; font-weight: bolder;">Bạn xác nhận chuyển bài biết cho phản biện Kun1?</p>
+					<a class="close btn btn-default btnclose" href="#" style="margin-left:100px;">Xác nhận</a>
+					<a class="close btn btn-default btnclose" href="#">Hủy</a>
+
+
+
+		</div>
+		<!-- end row -->
+	</div>
 	<!-- end container -->
 </div>
+
 </html>
 
 

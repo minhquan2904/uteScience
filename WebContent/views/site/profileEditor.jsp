@@ -60,27 +60,7 @@
 					</div>
 				</div>
 				<br>
-				<div class="row">
-					<div class="col-md-4 col-md-push-4">
-						<button class="btn btn-default dropdown-toggle"
-							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-							style="margin-right: 630px">
-							<span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>
-							Tác vụ khác <span class="glyphicon glyphicon-triangle-bottom"
-								aria-hidden="true"></span>
-						</button>
-						<ul class="dropdown-menu mq_float_right mq-dropdown-menu "
-							style="transform: translateX(0%) translateY(-10%);">
-							<li><a href="#">Gửi bài cho tổng biên tập</a></li>
-							<li><a href="#">Chỉnh sửa trạng thái thành đã chỉnh sửa</a></li>
-							<li><a href="#">Chỉnh sửa trạng thái thành chưa chỉnh
-									sửa</a></li>
-							<li role="separator" class="divider"></li>
-							<li><a href="#">Separated link</a></li>
-						</ul>
-						<!-- End some action -->
-					</div>
-				</div>
+				
 			</div>
 			<br>
 			<div class="profile">
@@ -106,7 +86,10 @@
 									<td>1</td>
 									<td>Ứng dụng CNTT</td>
 									<td>Công nghệ thông tin</td>
-									<td>Chưa chỉnh sửa</td>
+									<td><select class="form-control" id="sel1">
+									    <option>Đã chỉnh sửa</option>														    
+									    <option selected="selected">Chưa chỉnh sửa</option>														    
+									  </select></td>
 									<td>1/1/2016</td>
 									<td style="padding-left: 25px;"><a href="checkArticle.html"><span
 											class="glyphicon glyphicon-pencil" aria-hidden="true"></span></a></td>
@@ -115,7 +98,10 @@
 									<td>2</td>
 									<td>Samsung sẽ sớm bán Note7 trở lại</td>
 									<td>Viễn thông</td>
-									<td>Chưa chỉnh sửa</td>
+									<td><select class="form-control" id="sel1">
+									    <option selected="selected">Đã chỉnh sửa</option>														    
+									    <option>Chưa chỉnh sửa</option>														    
+									  </select></td>
 									<td>1/1/2016</td>
 									<td style="padding-left: 25px;"><a href="#"><span
 											class="glyphicon glyphicon-pencil" aria-hidden="true"></span></a></td>
@@ -125,7 +111,10 @@
 									<td>3</td>
 									<td>Máy rang ca cao</td>
 									<td>Sản phẩm mới</td>
-									<td>Đã chỉnh sửa</td>
+									<td><select class="form-control" id="sel1">
+									    <option selected="selected">Đã chỉnh sửa</option>														    
+									    <option>Chưa chỉnh sửa</option>														    
+									  </select></td>
 									<td>1/1/2016</td>
 									<td style="padding-left: 25px;"><a href="#" ><span
 											class="glyphicon glyphicon-pencil" aria-hidden="true"></span></a></td>
@@ -134,7 +123,10 @@
 									<td>4</td>
 									<td>Trực thăng tự chế của kỹ sư Bình Dương</td>
 									<td>Sản phẩm mới</td>
-									<td>Đã chỉnh sửa</td>
+									<td><select class="form-control" id="sel1">
+									    <option>Đã chỉnh sửa</option>														    
+									    <option>Chưa chỉnh sửa</option>														    
+									  </select></td>
 									<td>1/1/2016</td>
 									<td style="padding-left: 25px;"><a href="#"><span
 											class="glyphicon glyphicon-pencil" aria-hidden="true"></span></a></td>

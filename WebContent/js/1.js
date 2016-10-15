@@ -1,9 +1,9 @@
 $(function() {
-
+	
 	$(document).ready(function() {
 		$("#txtEditor").Editor();
 	});
-	
+
 	$('.dropdown').hover(function() {
 		$(this).addClass('open');
 	}, function() {
@@ -51,5 +51,34 @@ $(function() {
 
 	});
 	/*$('[data-toggle="tooltip"]').tooltip();*/
+	$(document).ready(function() {
+		$('a.ask-window').click(function() {
+			//lấy giá trị thuộc tính href - chính là phần tử "#box"
+			var Box = $(this).attr('href');
 
+			//cho hiện hộp đăng nhập trong 300ms
+			$(Box).fadeIn(300);
+
+			// thêm phần tử id="over" vào sau body
+			$('body').append('<div id="over">');
+			$('#over').fadeIn(300);
+
+			return false;
+		});
+
+		// khi click đóng hộp thoại
+		$(document).on('click', "a.close, #over", function() {
+			$('#over, .ask').fadeOut(300, function() {
+				$('#over').remove();
+			});
+			return false;
+		});
+
+		$(document).on('click', "button.close, #over", function() {
+			$('#over, .ask').fadeOut(300, function() {
+				$('#over').remove();
+			});
+			return false;
+		});
+	});
 });

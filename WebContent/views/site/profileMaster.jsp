@@ -62,26 +62,7 @@
 					</div>
 				</div>
 				<br>
-				<div class="row">
-					<div class="col-md-4 col-md-push-4">
-						<button class="btn btn-default dropdown-toggle"
-							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-							style="margin-right: 630px">
-							<span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>
-							Tác vụ khác <span class="glyphicon glyphicon-triangle-bottom"
-								aria-hidden="true"></span>
-						</button>
-						<ul class="dropdown-menu mq_float_right mq-dropdown-menu "
-							style="transform: translateX(0%) translateY(-10%);">
-							<li><a href="#">Chuyển cho biên tập viên</a></li>
-							<li><a href="#">Chuyển cho phản biện</a></li>
-							<li><a href="#">Some action</a></li>
-							<li role="separator" class="divider"></li>
-							<li><a href="#">Separated link</a></li>
-						</ul>
-						<!-- End some action -->
-					</div>
-				</div>
+				
 			</div>
 			<br>
 			<div class="profile">
@@ -113,6 +94,7 @@
 													<th>Trạng thái</th>
 													<th>Ngày cập nhật</th>
 													<th>Chi tiết</th>
+													<th>Nhận xét</th>
 												</tr>
 											</thead>
 											<tbody>
@@ -120,38 +102,71 @@
 													<td>1</td>
 													<td>Ứng dụng CNTT</td>
 													<td>Công nghệ thông tin</td>
-													<td>Cần chỉnh sửa</td>
+													<td>
+													<select class="form-control" id="mySelect" onchange="changeSTTbyMaster()">
+														    <option value = 0> Được đăng</option>
+														    <option value = 0>Cần chỉnh sửa</option>
+														    <option value = 0  selected="selected">Không được đăng</option>
+														    <option value = 1>Chuyển cho biên tập viên</option>
+															<option value = 2>Chuyển cho phản biện</option>
+														 </select></td>
 													<td>1/1/2016</td>
-													<td style="padding-left: 25px;"><a href="checkArticle.html" style=""><span
+													<td style="padding-left: 25px;"><a href="Article.html" style=""><span
 															class="glyphicon glyphicon-pencil" aria-hidden="true"></span></a></td>
+													<td style="padding-left: 25px;"><a class="ask-window" href="#ask-box" style=""><span
+																	class="glyphicon glyphicon-comment" aria-hidden="true"></span></a></td>		
 												</tr>
 												<tr>
 													<td>2</td>
 													<td>Samsung sẽ sớm bán Note7 trở lại</td>
 													<td>Viễn thông</td>
-													<td>Được đăng</td>
+													<td><select class="form-control" id="sel1">
+														    <option>Được đăng</option>
+														    <option>Cần chỉnh sửa</option>
+														    <option>Không được đăng</option>
+														    <option>Chuyển cho biên tập viên</option>
+																<option  selected="selected">Chuyển cho phản biện</option>
+														  </select></td>
 													<td>1/1/2016</td>
-													<td style="padding-left: 25px;"><a  href="checkArticle.html" style=""><span
+													<td style="padding-left: 25px;"><a  href="kArticle.html" style=""><span
 															class="glyphicon glyphicon-pencil" aria-hidden="true"></span></a></td>
+													<td style="padding-left: 25px;"><a class="ask-window" href="#ask-box" style=""><span
+																	class="glyphicon glyphicon-comment" aria-hidden="true"></span></a></td>
 												</tr>
 
 												<tr>
 													<td>3</td>
 													<td>Máy rang ca cao</td>
 													<td>Sản phẩm mới</td>
-													<td>Được đăng</td>
+													<td><select class="form-control" id="sel1">
+														    <option>Được đăng</option>
+														    <option>Cần chỉnh sửa</option>
+														    <option selected="selected">Không được đăng</option>
+														    <option>Chuyển cho biên tập viên</option>
+																<option>Chuyển cho phản biện</option>
+														  </select></td>
 													<td>1/1/2016</td>
 													<td style="padding-left: 25px;"><a  href="checkArticle.html"style=""><span
 															class="glyphicon glyphicon-pencil" aria-hidden="true"></span></a></td>
+													<td style="padding-left: 25px;"><a class="ask-window" href="#ask-box" style=""><span
+																	class="glyphicon glyphicon-comment" aria-hidden="true"></span></a></td>
 												</tr>
 												<tr>
 													<td>4</td>
 													<td>Trực thăng tự chế của kỹ sư Bình Dương</td>
 													<td>Sản phẩm mới</td>
-													<td>Được đăng</td>
+													<td><select class="form-control" id="sel1">
+														    <option>Được đăng</option>
+														    <option selected="selected">Cần chỉnh sửa</option>
+														    <option>Không được đăng</option>
+														    <option>Chuyển cho biên tập viên</option>
+															<option>Chuyển cho phản biện</option>
+														  </select></td>
 													<td>1/1/2016</td>
 													<td style="padding-left: 25px;"><a  href="checkArticle.html"style=""><span
 															class="glyphicon glyphicon-pencil" aria-hidden="true"></span></a></td>
+													<td style="padding-left: 25px;"><a class="ask-window" href="#ask-box" style=""><span
+																	class="glyphicon glyphicon-comment" aria-hidden="true"></span></a></td>		
 												</tr>
 											</tbody>
 										</table>
@@ -342,5 +357,38 @@
 		</div>
 	</div>
 </div>
+<script>
+function changeSTTbyMaster() 
+{
 
+	var x = document.getElementById("mySelect").value;
+	if(x ==1 )
+	{
+		window.location = "listEditor.html";
+	}
+	if(x==2)
+	{
+		window.location = "listEditor.html";
+
+	}
+}
+</script>
+<div class="row"><!-- Ask box -->
+			<div class="ask" id="ask-box" style="top:30%; left:60%;">
+				<a class="close" href="#"><img class="img-close" alt="Close" src="images/close.png" style=""/></a>
+					<p style="text-align: center; color: blue; font-weight: bolder; font-size:25px;">
+						Nhận xét
+					</p>
+
+					<p style="text-align: center; color: blue; font-weight: bolder;"><i>Tiê	u đề:</i> Samsung sẽ sớm bán Note7 trở lại</br></br>
+							<i>Tóm tắt:</i> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fermentum auctor aliquet. </br></br>
+							<i>Ý nghĩa bài viết:</i> Suspendisse ac ante sed libero.</br></br>
+							<i>Nội dung có tồn tại trên ấn phẩm khác hay không?</i> Bài viết không tồn tại trên ấn phẩm khác.</br></br>
+							<i>Kết luận:</i> Đồng ý cho bài viết được đăng.</br></br>
+							<i>Nội dung cần chỉnh sửa lại</i>: Không.</br></br>
+						</br> --Kun1-Tester--
+						</p>
+					<a class="close btn btn-default btnclose" href="#" style="margin-left:165px;">Đồng ý</a>
+		</div>
+		<!-- end row -->
 <jsp:include page="layout/_footer.jsp"></jsp:include>
