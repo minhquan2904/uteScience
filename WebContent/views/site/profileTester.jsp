@@ -88,24 +88,7 @@
 			<div class="profile">
 				<div class="row">
 					<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-						<div class="list-group">
-							<div class="list-group">
-								<p href="#" class="list-group-item active">Dành cho phản
-									biện</p>
-								<a href="#" class="list-group-item"><span
-									class="glyphicon glyphicon-comment" aria-hidden="true"
-									style="float: left padding-right:10px;"></span> Bài viết mới</a> <a
-									href="#" class="list-group-item"><span
-									class="glyphicon glyphicon-bookmark" aria-hidden="true"
-									style="float: left padding-right:10px;"></span> Thông báo</a> <a
-									href="#" class="list-group-item"><span
-									class="glyphicon glyphicon-pencil" aria-hidden="true"
-									style="float: left padding-right:10px;"></span> Chỉnh sửa thông
-									tin</a> <a href="signout.html" class="list-group-item"><span
-									class="glyphicon glyphicon-off" aria-hidden="true"
-									style="float: left padding-right:10px;"></span> Đăng xuất</a>
-							</div>
-						</div>
+						<jsp:include page="layout/_list-group-Tester.jsp"/>
 					</div>
 					<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
 						<div class="row">
@@ -128,7 +111,7 @@
 										<td>Công nghệ thông tin</td>
 										<td>Chuyển cho phản biện</td>
 										<td>1/1/2016</td>
-										<td style="padding-left: 25px;"><a href="#" style=""><span
+										<td style="padding-left: 25px;"><a href="post.html" style=""><span
 												class="glyphicon glyphicon-pencil" aria-hidden="true"></span></a></td>
 									</tr>
 									<tr>
@@ -137,7 +120,7 @@
 										<td>Viễn thông</td>
 										<td>Chuyển cho phản biện</td>
 										<td>1/1/2016</td>
-										<td style="padding-left: 25px;"><a href="#" style=""><span
+										<td style="padding-left: 25px;"><a href="post.html" style=""><span
 												class="glyphicon glyphicon-pencil" aria-hidden="true"></span></a></td>
 									</tr>
 
@@ -147,7 +130,7 @@
 										<td>Sản phẩm mới</td>
 										<td>Chuyển cho phản biện</td>
 										<td>1/1/2016</td>
-										<td style="padding-left: 25px;"><a href="#" style=""><span
+										<td style="padding-left: 25px;"><a href="post.html" style=""><span
 												class="glyphicon glyphicon-pencil" aria-hidden="true"></span></a></td>
 									</tr>
 									<tr>
@@ -156,7 +139,7 @@
 										<td>Sản phẩm mới</td>
 										<td>Chuyển cho phản biện</td>
 										<td>1/1/2016</td>
-										<td style="padding-left: 25px;"><a href="#" style=""><span
+										<td style="padding-left: 25px;"><a href="post.html" style=""><span
 												class="glyphicon glyphicon-pencil" aria-hidden="true"></span></a></td>
 									</tr>
 								</tbody>

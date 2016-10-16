@@ -1,0 +1,11 @@
+/dsn.jar
+/controller/
+/filter/
+/imap.jar
+/jstl-api.jar
+/jstl-impl.jar
+/mailapi.jar
+/model/
+/pop3.jar
+/smtp.jar
+/tools/

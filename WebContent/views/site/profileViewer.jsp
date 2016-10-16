@@ -13,16 +13,7 @@
 			<div class="profile">
 				<div class="row">
 					<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-						<div class="list-group">
-							<div class="list-group">
-								<p class="list-group-item active">Dành cho đọc giả</p>
-								<a href="view-posted.html" class="list-group-item"><span
-									class="glyphicon glyphicon-bookmark" aria-hidden="true"
-									style="float: left padding-right:10px;"></span> Tin đã lưu</a> 
-									<a href="signout.html" class="list-group-item"><span class="glyphicon glyphicon-off" aria-hidden="true"
-									style="float: left padding-right:10px;"></span> Đăng xuất</a>
-							</div>
-						</div>
+						<jsp:include page="layout/_list-group-Viewer.jsp"/>
 					</div>
 					<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
 						<div class="row">

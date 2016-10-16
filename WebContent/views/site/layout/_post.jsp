@@ -1,7 +1,7 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 
 <form action="" method="POST" role="form">
-	<legend>Đăng bài viết mới</legend>
+	<legend>Bài viết mới</legend>
 	<div class="form-group">
 		<label for="">Tiêu đề</label> <input name="title" type="text"
 			class="form-control" id="" value="Ứng dụng CNTT"

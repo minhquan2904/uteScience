@@ -17,7 +17,7 @@
 
 <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
 <link rel="stylesheet" href="css/font-awesome.css" type="text/css">
-<link  rel="stylesheet" href="css/editor.css" type="text/css"/>
+<link rel="stylesheet" href="css/editor.css" type="text/css"/>
 <link rel="stylesheet" href="css/1.css" type="text/css">
 
 
