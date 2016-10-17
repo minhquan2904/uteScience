@@ -1,5 +1,11 @@
 
 *{margin:0;padding:0; }
+
+.form-control.valid {
+    background-image: url('../images/true.png')!important;
+    background-repeat: no-repeat;
+    background-position: right;
+}
 #over {
    display: none;
     background: #000;
@@ -132,6 +138,10 @@ hr{
 }
 *{margin:0;padding:0; }
 
+label.error {
+    display: block;
+}
+
 .loadpage.text-center {
     overflow: hidden;
 }
@@ -141,8 +151,10 @@ hr{
 }
 
 form input.error {
-    background: rgba(0, 0, 0, 0.69);
-    color: rgba(229, 230, 229, 0.68);
+    background-image: url('../images/false.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    float: right;
 }
 
 ul#myError li {
