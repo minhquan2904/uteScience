@@ -441,6 +441,24 @@
 		</div>
 	</div>
 </div>
+<div class="row"><!-- Ask box -->
+			<div class="ask" id="ask-box" style="top:30%; left:60%;">
+				<a class="close" href="#"><img class="img-close" alt="Close" src="images/close.png" style=""/></a>
+					<p style="text-align: center; color: blue; font-weight: bolder; font-size:25px;">
+						Nhận xét
+					</p>
+
+					<p style="text-align: center; color: blue; font-weight: bolder;"><i>Tiêu đề:</i> Samsung sẽ sớm bán Note7 trở lại</br></br>
+							<i>Tóm tắt:</i> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fermentum auctor aliquet. </br></br>
+							<i>Ý nghĩa bài viết:</i> Suspendisse ac ante sed libero.</br></br>
+							<i>Nội dung có tồn tại trên ấn phẩm khác hay không?</i> Bài viết không tồn tại trên ấn phẩm khác.</br></br>
+							<i>Kết luận:</i> Đồng ý cho bài viết được đăng.</br></br>
+							<i>Nội dung cần chỉnh sửa lại</i>: Không.</br></br>
+						</br> --Kun1-Tester--
+						</p>
+					<a class="close btn btn-default btnclose" href="#" style="margin-left:165px;">Đồng ý</a>
+		</div>
+		<!-- end row -->
 <script>
 function changeSTTbyMaster() 
 {
